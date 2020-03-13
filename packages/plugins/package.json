@@ -1,6 +1,6 @@
 {
   "name": "@de/plugins",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "plugins for de",
   "main": "lib/index.js",
   "module": "esm/index.js",
@@ -23,7 +23,7 @@
     "cov:report": "npm run cov && cat ./coverage/lcov.info | ../../node_modules/coveralls/bin/coveralls.js"
   },
   "dependencies": {
-    "@de/shared": "0.0.1",
-    "@de/store": "0.0.1"
+    "@de/shared": "0.0.2",
+    "@de/store": "0.0.2"
   }
 }
