@@ -1,6 +1,6 @@
 {
   "name": "@de/helpers",
-  "version": "0.0.2",
+  "version": "0.0.8",
   "description": "helpers for de",
   "main": "lib/index.js",
   "module": "esm/index.js",
