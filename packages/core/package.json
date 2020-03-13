@@ -1,6 +1,6 @@
 {
   "name": "mini-ali-de",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "core for de",
   "main": "lib/index.js",
   "module": "esm/index.js",
