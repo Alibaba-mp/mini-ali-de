@@ -27,7 +27,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@de/shared": "0.0.2",
-    "@de/store": "0.0.2"
+    "@de/shared": "^0.0.2",
+    "@de/store": "^0.0.2"
   }
 }
