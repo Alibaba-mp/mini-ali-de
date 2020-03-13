@@ -1,6 +1,6 @@
 {
   "name": "@de/shared",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "shared for de",
   "main": "lib/index.js",
   "module": "esm/index.js",
@@ -9,7 +9,8 @@
     "lib"
   ],
   "publishConfig": {
-    "registry": "https://registry.npmjs.org"
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
   },
   "scripts": {
     "dev": "npm run dev:cjs",
