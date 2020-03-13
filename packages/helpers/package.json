@@ -1,6 +1,6 @@
 {
   "name": "@de/helpers",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "helpers for de",
   "main": "lib/index.js",
   "module": "esm/index.js",
@@ -23,6 +23,6 @@
     "cov:report": "npm run cov && cat ./coverage/lcov.info | ../../node_modules/coveralls/bin/coveralls.js"
   },
   "dependencies": {
-    "@de/shared": "0.0.2"
+    "@de/shared": "0.0.3"
   }
 }
