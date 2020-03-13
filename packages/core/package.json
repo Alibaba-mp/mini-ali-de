@@ -1,6 +1,6 @@
 {
   "name": "mini-ali-de",
-  "version": "0.0.11",
+  "version": "0.0.2",
   "description": "core for de",
   "main": "lib/index.js",
   "module": "esm/index.js",
@@ -26,10 +26,10 @@
     "registry": "https://registry.npmjs.org"
   },
   "dependencies": {
-    "@de/helpers": "^0.0.5",
-    "@de/plugins": "^0.0.5",
-    "@de/relation": "^0.0.5",
-    "@de/shared": "^0.0.5",
-    "@de/store": "^0.0.5"
+    "@de/helpers": "0.0.2",
+    "@de/plugins": "0.0.2",
+    "@de/relation": "0.0.2",
+    "@de/shared": "0.0.2",
+    "@de/store": "0.0.2"
   }
 }
