@@ -1,6 +1,6 @@
 {
   "name": "@de/shared",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "shared for de",
   "main": "lib/index.js",
   "module": "esm/index.js",
@@ -8,6 +8,9 @@
     "esm",
     "lib"
   ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
   "scripts": {
     "dev": "npm run dev:cjs",
     "dev:cjs": "tsc -p ./tsconfig.json --watch",

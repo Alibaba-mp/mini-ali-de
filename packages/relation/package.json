@@ -1,6 +1,6 @@
 {
   "name": "@de/relation",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "relation for de",
   "main": "lib/index.js",
   "module": "esm/index.js",
@@ -22,9 +22,12 @@
     "cov": "BABEL_ENV=test babel-node ../../node_modules/istanbul/lib/cli.js cover _mocha tests/* -- --no-deprecation --compilers js:babel-register",
     "cov:report": "npm run cov && cat ./coverage/lcov.info | ../../node_modules/coveralls/bin/coveralls.js"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
   "dependencies": {
-    "@de/helpers": "0.0.3",
-    "@de/shared": "0.0.3",
-    "@de/store": "0.0.3"
+    "@de/helpers": "^0.0.4",
+    "@de/shared": "^0.0.4",
+    "@de/store": "^0.0.4"
   }
 }
