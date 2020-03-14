@@ -9,6 +9,7 @@ declare function Component(options: TComponentOption<any, any, any, any, any, an
 interface IComponentMethods {
   [name: string]: (...args: any[]) => void;
 }
+
 export function component<
   Props,
   Data,
