@@ -1,4 +1,4 @@
-import { IBatch } from '@de/shared';
+import { IBatch } from '@de2/shared';
 import { Store } from './Store';
 
 export function batch(store: Store<any, any, any, any>, batch: IBatch | boolean) {

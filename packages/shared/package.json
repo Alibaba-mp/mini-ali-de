@@ -1,6 +1,6 @@
 {
-  "name": "@de/shared",
-  "version": "0.0.9",
+  "name": "@de2/shared",
+  "version": "0.0.1",
   "description": "shared for de",
   "main": "lib/index.js",
   "module": "esm/index.js",
@@ -9,7 +9,6 @@
     "lib"
   ],
   "publishConfig": {
-    "registry": "https://registry.npmjs.org",
     "access": "public"
   },
   "scripts": {

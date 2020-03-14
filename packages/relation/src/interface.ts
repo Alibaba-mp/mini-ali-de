@@ -1,5 +1,5 @@
-import { IDic } from '@de/shared';
-import { Store } from '@de/store';
+import { IDic } from '@de2/shared';
+import { Store } from '@de2/store';
 
 export interface IConnectProps {
   mapState?: TConnectPropsType;

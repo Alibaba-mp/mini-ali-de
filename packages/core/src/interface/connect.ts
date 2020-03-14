@@ -1,4 +1,4 @@
-import { Store } from '@de/store';
+import { Store } from '@de2/store';
 
 export interface IStoreConnect<
   S extends Store<any, any, any, any>,

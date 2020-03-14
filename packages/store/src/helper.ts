@@ -1,5 +1,5 @@
-import { setIn } from '@de/helpers';
-import { IDic } from '@de/shared';
+import { setIn } from '@de2/helpers';
+import { IDic } from '@de2/shared';
 import { IInnerActionTree, IInnerGetterTree, IInnerMutationTree, IModule } from './interface';
 
 export function argcAdapter(_type: any, _payload: any, _opts: any = {}) {

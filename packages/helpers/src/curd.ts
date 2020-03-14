@@ -1,4 +1,4 @@
-import { IDic } from '@de/shared';
+import { IDic } from '@de2/shared';
 
 enum Methods {
   GET = 'get',

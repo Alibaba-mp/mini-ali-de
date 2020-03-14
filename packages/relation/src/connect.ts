@@ -1,6 +1,6 @@
-import { compose } from '@de/helpers';
-import { IDic } from '@de/shared';
-import { Store } from '@de/store';
+import { compose } from '@de2/helpers';
+import { IDic } from '@de2/shared';
+import { Store } from '@de2/store';
 
 import { ESTORE_TYPE, IEConnectProps, IExtendsStore, TConnectMiddleware } from './interface';
 import { mapActions, mapActions4C, mapMutations, mapMutations4C } from './mapActOrMut';

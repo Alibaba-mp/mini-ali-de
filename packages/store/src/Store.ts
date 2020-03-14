@@ -1,5 +1,5 @@
-import { deleteIn, getIn, setIn, updateIn } from '@de/helpers';
-import { IActionPayload, ICommitOptions, IDispatchOptions, IMutationPayload, IPActionPayload, IPMutationPayload, IWatch } from '@de/shared';
+import { deleteIn, getIn, setIn, updateIn } from '@de2/helpers';
+import { IActionPayload, ICommitOptions, IDispatchOptions, IMutationPayload, IPActionPayload, IPMutationPayload, IWatch } from '@de2/shared';
 
 import { produce } from 'immer';
 import { batch } from './batch';

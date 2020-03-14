@@ -1,4 +1,4 @@
-import { IDic, isObject } from '@de/shared';
+import { IDic, isObject } from '@de2/shared';
 
 export function flattenObject(obj: IDic): IDic {
   function iterator(obj: IDic, prefix: string = '', flattened: IDic = {}) {

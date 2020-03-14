@@ -1,6 +1,6 @@
-import { connect4P /* connect4PG */ } from '@de/relation';
-import { isObject } from '@de/shared';
-import { Store } from '@de/store';
+import { connect4P /* connect4PG */ } from '@de2/relation';
+import { isObject } from '@de2/shared';
+import { Store } from '@de2/store';
 import { IPageInstance, TPageOption } from './interface';
 import { connectProps2MapProps } from './utils';
 

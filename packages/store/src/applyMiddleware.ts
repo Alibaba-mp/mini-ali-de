@@ -1,4 +1,4 @@
-import { compose } from '@de/helpers';
+import { compose } from '@de2/helpers';
 import { assert } from './helper';
 import { EMiddlewareHooks, TMiddleware } from './interface';
 import { Store } from './Store';

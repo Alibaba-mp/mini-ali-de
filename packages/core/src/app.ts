@@ -1,5 +1,5 @@
-import { Provider } from '@de/relation';
-import { Store } from '@de/store';
+import { Provider } from '@de2/relation';
+import { Store } from '@de2/store';
 import { TAppOption } from './interface';
 
 declare function App(options: TAppOption<any, any>): void;

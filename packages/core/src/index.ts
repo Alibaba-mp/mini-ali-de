@@ -1,6 +1,6 @@
-export { Store, use, applyMiddleware, IActionContext, IModule, TPlugin } from '@de/store';
-export { compose, deleteIn, getIn, setIn, updateIn, flattenObject, flatDeepDiff } from '@de/helpers';
-export { createDevtool, createLogger, createLoggerMiddleware, createSetDataLogger } from '@de/plugins';
+export { Store, use, applyMiddleware, IActionContext, IModule, TPlugin } from '@de2/store';
+export { compose, deleteIn, getIn, setIn, updateIn, flattenObject, flatDeepDiff } from '@de2/helpers';
+export { createDevtool, createLogger, createLoggerMiddleware, createSetDataLogger } from '@de2/plugins';
 export {
   connect,
   connectAdvance,
@@ -14,7 +14,7 @@ export {
   mapState4C,
   mapActions4C,
   mapMutations4C,
-} from '@de/relation';
+} from '@de2/relation';
 
 export { app } from './app';
 export { page } from './page';

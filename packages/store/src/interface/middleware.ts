@@ -1,4 +1,4 @@
-import { IPActionPayload, IPMutationPayload } from '@de/shared';
+import { IPActionPayload, IPMutationPayload } from '@de2/shared';
 import { Store } from '../';
 import { TAction, TMutation } from './';
 

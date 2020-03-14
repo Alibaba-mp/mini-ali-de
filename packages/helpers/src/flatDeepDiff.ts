@@ -1,4 +1,4 @@
-import { IDic, isArray, isEmpty, isObject } from '@de/shared';
+import { IDic, isArray, isEmpty, isObject } from '@de2/shared';
 
 export function flatDeepDiff(prev: IDic, next: IDic) {
   if (!isObject(prev) || !isObject(next)) {

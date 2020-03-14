@@ -1,5 +1,5 @@
-import { getIn } from '@de/helpers';
-import { IDic, IPMutationPayload } from '@de/shared';
+import { getIn } from '@de2/helpers';
+import { IDic, IPMutationPayload } from '@de2/shared';
 import { warn } from './helper';
 import { Store } from './store';
 

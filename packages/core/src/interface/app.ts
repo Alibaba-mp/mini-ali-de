@@ -1,4 +1,4 @@
-import { Store } from '@de/store';
+import { Store } from '@de2/store';
 import { IOnShareAppMessageResult, TOnShareAppMessageOptions } from './shared';
 
 interface IAppLaunchOptions {

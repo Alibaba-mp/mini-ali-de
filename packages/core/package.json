@@ -1,6 +1,6 @@
 {
   "name": "mini-ali-de",
-  "version": "0.0.9",
+  "version": "0.0.1",
   "description": "core for de",
   "main": "lib/index.js",
   "module": "esm/index.js",
@@ -23,13 +23,13 @@
     "cov:report": "npm run cov && cat ./coverage/lcov.info | ../../node_modules/coveralls/bin/coveralls.js"
   },
   "publishConfig": {
-    "registry": "https://registry.npmjs.org"
+    "access": "public"
   },
   "dependencies": {
-    "@de/helpers": "^0.0.1",
-    "@de/plugins": "^0.0.1",
-    "@de/relation": "^0.0.1",
-    "@de/shared": "^0.0.1",
-    "@de/store": "^0.0.1"
+    "@de2/helpers": "^0.0.1",
+    "@de2/plugins": "^0.0.1",
+    "@de2/relation": "^0.0.1",
+    "@de2/shared": "^0.0.1",
+    "@de2/store": "^0.0.1"
   }
 }

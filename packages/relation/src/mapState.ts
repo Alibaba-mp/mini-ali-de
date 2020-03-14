@@ -1,5 +1,5 @@
-import { flatDeepDiff } from '@de/helpers';
-import { IDic, isEmpty } from '@de/shared';
+import { flatDeepDiff } from '@de2/helpers';
+import { IDic, isEmpty } from '@de2/shared';
 import { ESTORE_TYPE, IEConnectProps, IExtendsStore } from './interface';
 import { getMappedGetters, getMappedState } from './mapHelper';
 

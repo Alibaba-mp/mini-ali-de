@@ -1,4 +1,4 @@
-import { ICommitOptions, IDic, IMutationPayload } from '@de/shared';
+import { ICommitOptions, IDic, IMutationPayload } from '@de2/shared';
 import { getStateByContext } from './helper';
 import { Store } from './Store';
 

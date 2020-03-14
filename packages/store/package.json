@@ -1,6 +1,6 @@
 {
-  "name": "@de/store",
-  "version": "0.0.9",
+  "name": "@de2/store",
+  "version": "0.0.1",
   "description": "store for de",
   "main": "lib/index.js",
   "module": "esm/index.js",
@@ -23,12 +23,11 @@
     "cov:report": "npm run cov && cat ./coverage/lcov.info | ../../node_modules/coveralls/bin/coveralls.js"
   },
   "publishConfig": {
-    "registry": "https://registry.npmjs.org",
     "access": "public"
   },
   "dependencies": {
-    "@de/helpers": "^0.0.1",
-    "@de/shared": "^0.0.1",
+    "@de2/helpers": "^0.0.1",
+    "@de2/shared": "^0.0.1",
     "immer": "^1.12.1"
   }
 }

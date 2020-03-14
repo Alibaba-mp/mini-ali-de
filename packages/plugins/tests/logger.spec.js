@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { Store, applyMiddleware } from '@de/store';
+import { Store, applyMiddleware } from '@de2/store';
 import { createLogger, createSetDataLogger, createLoggerMiddleware } from '..';
 
 describe('plugin-devtool', () => {

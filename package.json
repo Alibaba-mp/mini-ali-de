@@ -1,8 +1,9 @@
 {
+  "private": true,
   "scripts": {
     "init": "rimraf node_modules && npm i && lerna clean --yes && lerna bootstrap",
     "prepublishOnly": "npm run lint && npm run cov",
-    "publish": "lerna publish",
+    "publish": "lerna publish --no-verify-access",
     "dev": "lerna run dev --parallel",
     "build:clean": "rimraf ./coverage ./packages/*/{lib,esm,dist,coverage}",
     "build": "npm run build:clean && lerna run build",
@@ -31,7 +32,7 @@
     "chalk": "^2.4.2",
     "coveralls": "^3.0.2",
     "istanbul": "^1.1.0-alpha.1",
-    "lerna": "^2.11.0",
+    "lerna": "^3.14.1",
     "mocha": "^5.2.0",
     "pre-commit": "^1.2.2",
     "prettier": "^1.15.3",

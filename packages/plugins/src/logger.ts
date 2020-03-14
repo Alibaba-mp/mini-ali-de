@@ -1,5 +1,5 @@
-import { IDic, IPMutationPayload } from '@de/shared';
-import { Store, TPlugin } from '@de/store';
+import { IDic, IPMutationPayload } from '@de2/shared';
+import { Store, TPlugin } from '@de2/store';
 
 interface IEStore extends Store<any, any, any, any> {
   $setDataHook?: (...args: any[]) => any;

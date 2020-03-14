@@ -1,4 +1,4 @@
-import { IBatch, ICommitOptions, IDispatchOptions, IMutationPayload } from '@de/shared';
+import { IBatch, ICommitOptions, IDispatchOptions, IMutationPayload } from '@de2/shared';
 import { Store } from '../';
 
 export { EMiddlewareHooks, TMiddleware } from './middleware';

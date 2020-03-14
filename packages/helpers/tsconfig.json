@@ -1,6 +1,15 @@
 {
-  "extends": "../../tsconfig.json",
   "compilerOptions": {
+    "allowJs": false,
+    "lib": ["es5", "es6", "dom"],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noImplicitThis": false,
+    "noImplicitAny": true,
+    "sourceMap": true,
+    "target": "es5",
+    "declaration": true,
+    "declarationMap": true,
     "outDir": "./lib",
     "typeRoots": ["node_modules/@types", "../../node_modules/@types"]
   },

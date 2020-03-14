@@ -1,6 +1,6 @@
-import { getIn } from '@de/helpers';
-import { IDic, isRealObject } from '@de/shared';
-import { Store } from '@de/store';
+import { getIn } from '@de2/helpers';
+import { IDic, isRealObject } from '@de2/shared';
+import { Store } from '@de2/store';
 
 import { TConnectPropsType } from './interface';
 

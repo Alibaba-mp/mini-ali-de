@@ -1,5 +1,5 @@
-import { connect4C } from '@de/relation';
-import { Store } from '@de/store';
+import { connect4C } from '@de2/relation';
+import { Store } from '@de2/store';
 import { IComponentInstance, TComponentOption } from './interface';
 import { connectProps2MapProps } from './utils';
 // import { dispatch } from './mixins';

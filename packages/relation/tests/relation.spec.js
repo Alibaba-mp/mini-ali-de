@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { Store } from '@de/store';
+import { Store } from '@de2/store';
 import { connect4P, connect4C, Provider } from '..';
 
 const genModule = () => ({

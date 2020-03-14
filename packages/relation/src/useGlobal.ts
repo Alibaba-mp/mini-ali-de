@@ -1,7 +1,7 @@
 /**
  * 暂时下掉
  */
-import { Store } from '@de/store';
+import { Store } from '@de2/store';
 import { connectAdvance, mapActions, mapActions4C, mapMutations, mapMutations4C, mapState, mapState4C } from './index';
 import { ESTORE_TYPE, IEConnectProps } from './interface';
 

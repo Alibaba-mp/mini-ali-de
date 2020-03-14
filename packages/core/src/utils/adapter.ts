@@ -1,5 +1,5 @@
-import { IConnectorProps, IConnectProps } from '@de/relation';
-import { isEmpty } from '@de/shared';
+import { IConnectorProps, IConnectProps } from '@de2/relation';
+import { isEmpty } from '@de2/shared';
 
 export function connectProps2MapProps(connector: IConnectorProps) {
   if (!connector || isEmpty(connector)) {
