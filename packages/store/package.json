@@ -26,8 +26,8 @@
     "access": "public"
   },
   "dependencies": {
-    "@de2/helpers": "^0.0.1",
-    "@de2/shared": "^0.0.1",
+    "@de2/helpers": "0.0.1",
+    "@de2/shared": "0.0.1",
     "immer": "^1.12.1"
   }
 }

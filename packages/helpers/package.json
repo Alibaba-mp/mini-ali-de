@@ -26,6 +26,6 @@
     "access": "public"
   },
   "dependencies": {
-    "@de2/shared": "^0.0.1"
+    "@de2/shared": "0.0.1"
   }
 }

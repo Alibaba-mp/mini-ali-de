@@ -26,10 +26,10 @@
     "access": "public"
   },
   "dependencies": {
-    "@de2/helpers": "^0.0.1",
-    "@de2/plugins": "^0.0.1",
-    "@de2/relation": "^0.0.1",
-    "@de2/shared": "^0.0.1",
-    "@de2/store": "^0.0.1"
+    "@de2/helpers": "0.0.1",
+    "@de2/plugins": "0.0.1",
+    "@de2/relation": "0.0.1",
+    "@de2/shared": "0.0.1",
+    "@de2/store": "0.0.1"
   }
 }
