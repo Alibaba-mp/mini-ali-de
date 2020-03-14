@@ -25,5 +25,5 @@
     "cov": "BABEL_ENV=test babel-node ../../node_modules/istanbul/lib/cli.js cover _mocha tests/* -- --no-deprecation --compilers js:babel-register",
     "cov:report": "npm run cov && cat ./coverage/lcov.info | ../../node_modules/coveralls/bin/coveralls.js"
   },
-  "gitHead": "2fb1324838cee6b44a4d2498379186ded06a63ba"
+  "gitHead": "9e3762abde3759b495f721afa2c0a795146c0d95"
 }
