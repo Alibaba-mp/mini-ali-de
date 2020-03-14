@@ -1,0 +1,47 @@
+{
+  "private": true,
+  "scripts": {
+    "init": "rimraf node_modules && npm i && lerna clean --yes && lerna bootstrap",
+    "prepublishOnly": "npm run lint && npm run cov",
+    "publish": "lerna publish --no-verify-access",
+    "dev": "lerna run dev --parallel",
+    "build:clean": "rimraf ./coverage ./packages/*/{lib,esm,dist,coverage}",
+    "build": "npm run build:clean && lerna run build",
+    "lint": "npm run prettier && lerna run lint",
+    "lint:fix": "npm run prettier:fix && lerna run lint:fix",
+    "prettier": "prettier --config ./.prettierrc --list-different 'packages/**/src/**/*.ts'",
+    "prettier:fix": "prettier --config ./.prettierrc --write 'packages/**/src/**/*.ts'",
+    "test": "BABEL_ENV=test mocha ./packages/**/tests/*.spec.js --require ./.setup.js --no-deprecation --compilers js:babel-register",
+    "cov": "BABEL_ENV=test babel-node node_modules/istanbul/lib/cli.js cover _mocha ./packages/**/tests/*.spec.js -- --require ./.setup.js --no-deprecation --compilers js:babel-register",
+    "cov:report": "npm run cov && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+    "test:package": "lerna run test",
+    "cov:package": "lerna run cov",
+    "cov:report:package": "lerna run cov:report"
+  },
+  "pre-commit": [
+    "lint"
+  ],
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "chalk": "^2.4.2",
+    "coveralls": "^3.0.2",
+    "istanbul": "^1.1.0-alpha.1",
+    "lerna": "^3.14.1",
+    "mocha": "^5.2.0",
+    "pre-commit": "^1.2.2",
+    "prettier": "^1.15.3",
+    "request": "^2.88.0",
+    "reselect": "^3.0.1",
+    "rimraf": "^2.6.3",
+    "tslib": "^1.10.0",
+    "tslint": "^5.11.0",
+    "tslint-config-prettier": "^1.17.0",
+    "typescript": "^3.7.0"
+  }
+}

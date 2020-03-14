@@ -1,0 +1,36 @@
+{
+  "name": "mini-ali-de",
+  "version": "0.0.2",
+  "description": "core for de",
+  "main": "lib/index.js",
+  "module": "esm/index.js",
+  "files": [
+    "esm",
+    "lib"
+  ],
+  "scripts": {
+    "dev": "npm run dev:cjs",
+    "dev:cjs": "tsc -p ./tsconfig.json --watch",
+    "dev:esm": "tsc -p ./tsconfig.esm.json --watch",
+    "build": "npm run build:cjs && npm run build:esm",
+    "build:cjs": "tsc -p ./tsconfig.json",
+    "build:esm": "tsc -p ./tsconfig.esm.json",
+    "lint": "tslint --project ./tsconfig.json",
+    "lint:fix": "tslint --fix --project ./tsconfig.json",
+    "prepublishOnly": "npm run build",
+    "test": "BABEL_ENV=test mocha tests/* --no-deprecation --compilers js:babel-register",
+    "cov": "BABEL_ENV=test babel-node ../../node_modules/istanbul/lib/cli.js cover _mocha tests/* -- --no-deprecation --compilers js:babel-register",
+    "cov:report": "npm run cov && cat ./coverage/lcov.info | ../../node_modules/coveralls/bin/coveralls.js"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@de2/helpers": "0.0.2",
+    "@de2/plugins": "0.0.2",
+    "@de2/relation": "0.0.2",
+    "@de2/shared": "0.0.2",
+    "@de2/store": "0.0.2"
+  },
+  "gitHead": "2fb1324838cee6b44a4d2498379186ded06a63ba"
+}

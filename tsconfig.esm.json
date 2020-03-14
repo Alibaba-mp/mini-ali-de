@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "allowJs": false,
+    "lib": ["es5", "es6", "dom"],
+    "module": "es6",
+    "moduleResolution": "node",
+    "noImplicitThis": false,
+    "noImplicitAny": true,
+    "sourceMap": true,
+    "target": "es5",
+    "declaration": true,
+    "declarationMap": true
+  }
+}
