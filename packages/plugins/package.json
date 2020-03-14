@@ -1,6 +1,6 @@
 {
   "name": "@de/plugins",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "plugins for de",
   "main": "lib/index.js",
   "module": "esm/index.js",
@@ -27,7 +27,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@de/shared": "^0.0.2",
-    "@de/store": "^0.0.2"
+    "@de/shared": "^0.0.1",
+    "@de/store": "^0.0.1"
   }
 }
