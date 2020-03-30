@@ -17,7 +17,6 @@ export function page<
   const { $store, mixins = [], connector } = options;
   const assign = Object.assign;
 
-  // mixins.push(dispatch);
   mixins.forEach((item: any) => {
     Object.keys(item).forEach(key => {
       if (typeof item[key] === 'function') {
