@@ -1,6 +1,6 @@
 {
   "name": "mini-ali-de",
-  "version": "0.1.0-alpha.0",
+  "version": "0.1.0-alpha.1",
   "description": "core for de",
   "main": "lib/index.js",
   "module": "esm/index.js",
@@ -32,5 +32,5 @@
     "@de2/shared": "0.0.3",
     "@de2/store": "0.0.3"
   },
-  "gitHead": "9e3762abde3759b495f721afa2c0a795146c0d95"
+  "gitHead": "a355bd869550ff5bd0463e223d917d2580f6abf4"
 }
