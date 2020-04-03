@@ -1,6 +1,6 @@
 {
   "name": "@de2/plugins",
-  "version": "0.1.0-beta.3",
+  "version": "0.1.0-beta.4",
   "description": "plugins for de",
   "main": "lib/index.js",
   "module": "esm/index.js",
@@ -26,8 +26,8 @@
     "access": "public"
   },
   "dependencies": {
-    "@de2/shared": "0.1.0-beta.3",
-    "@de2/store": "0.1.0-beta.3"
+    "@de2/shared": "0.1.0-beta.4",
+    "@de2/store": "0.1.0-beta.4"
   },
   "gitHead": "77c98bd0a6469fa9be230afd25f0f05c0b253b5f"
 }
