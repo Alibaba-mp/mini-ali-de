@@ -1,6 +1,6 @@
 {
   "name": "@de2/helpers",
-  "version": "0.1.0-beta.2",
+  "version": "0.1.0-beta.3",
   "description": "helpers for de",
   "main": "lib/index.js",
   "module": "esm/index.js",
