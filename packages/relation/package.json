@@ -1,6 +1,6 @@
 {
   "name": "@de2/relation",
-  "version": "0.1.0-beta.1",
+  "version": "0.1.0-beta.2",
   "description": "relation for de",
   "main": "lib/index.js",
   "module": "esm/index.js",
@@ -26,9 +26,9 @@
     "access": "public"
   },
   "dependencies": {
-    "@de2/helpers": "0.1.0-beta.1",
+    "@de2/helpers": "0.1.0-beta.2",
     "@de2/shared": "0.1.0-beta.1",
-    "@de2/store": "0.1.0-beta.1"
+    "@de2/store": "0.1.0-beta.2"
   },
   "gitHead": "baeba9ec0f59aa4e66558ebc5209ca37db759546"
 }
