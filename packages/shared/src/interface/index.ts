@@ -14,6 +14,7 @@ export interface IDispatch {
 export interface IDispatchOptions {
   root?: boolean;
 }
+
 export interface ICommit<S> {
   (payload: Partial<S>, options?: ICommitOptions): void;
   (type: string, payload?: any, options?: ICommitOptions): void;
@@ -23,6 +24,7 @@ export interface ICommitOptions {
   meta?: any;
   root?: boolean;
 }
+
 export interface IMutationPayload {
   type?: string;
   [key: string]: any;
