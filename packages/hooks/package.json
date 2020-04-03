@@ -1,8 +1,7 @@
 {
   "name": "@de2/hooks",
   "version": "0.1.0-beta.2",
-  "description": "hooks for mini-ali-de",
-  "author": "子贱 <chunk.cj@antfin.com>",
+  "description": "hooks for de",
   "main": "lib/index.js",
   "module": "esm/index.js",
   "files": [
@@ -10,22 +9,25 @@
     "lib"
   ],
   "scripts": {
-    "dev": "tnpm run dev:cjs",
+    "dev": "npm run dev:cjs",
     "dev:cjs": "tsc -p ./tsconfig.json --watch",
     "dev:esm": "tsc -p ./tsconfig.esm.json --watch",
-    "build": "tnpm run build:cjs && tnpm run build:esm",
+    "build": "npm run build:cjs && npm run build:esm",
     "build:cjs": "tsc -p ./tsconfig.json",
     "build:esm": "tsc -p ./tsconfig.esm.json",
     "lint": "tslint --project ./tsconfig.json",
     "lint:fix": "tslint --fix --project ./tsconfig.json",
-    "prepublishOnly": "tnpm run build",
+    "prepublishOnly": "npm run build",
     "test": "BABEL_ENV=test mocha tests/* --no-deprecation --compilers js:babel-register",
     "cov": "BABEL_ENV=test babel-node ../../node_modules/istanbul/lib/cli.js cover _mocha tests/* -- --no-deprecation --compilers js:babel-register",
-    "cov:report": "tnpm run cov && cat ./coverage/lcov.info | ../../node_modules/coveralls/bin/coveralls.js"
+    "cov:report": "npm run cov && cat ./coverage/lcov.info | ../../node_modules/coveralls/bin/coveralls.js"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "dependencies": {
     "immer": "^6.0.3",
     "tslib": "^1.11.1"
   },
-  "gitHead": "baeba9ec0f59aa4e66558ebc5209ca37db759546"
+  "gitHead": "77c98bd0a6469fa9be230afd25f0f05c0b253b5f"
 }
