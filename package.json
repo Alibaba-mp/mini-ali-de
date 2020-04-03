@@ -16,7 +16,9 @@
     "cov:report": "npm run cov && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
     "test:package": "lerna run test",
     "cov:package": "lerna run cov",
-    "cov:report:package": "lerna run cov:report"
+    "cov:report:package": "lerna run cov:report",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
   },
   "pre-commit": [
     "lint"

@@ -1,0 +1,30 @@
+{
+  "name": "@de2/hooks",
+  "version": "0.1.0",
+  "description": "hooks for mini-ali-de",
+  "author": "子贱 <chunk.cj@antfin.com>",
+  "main": "lib/index.js",
+  "module": "esm/index.js",
+  "files": [
+    "esm",
+    "lib"
+  ],
+  "scripts": {
+    "dev": "tnpm run dev:cjs",
+    "dev:cjs": "tsc -p ./tsconfig.json --watch",
+    "dev:esm": "tsc -p ./tsconfig.esm.json --watch",
+    "build": "tnpm run build:cjs && tnpm run build:esm",
+    "build:cjs": "tsc -p ./tsconfig.json",
+    "build:esm": "tsc -p ./tsconfig.esm.json",
+    "lint": "tslint --project ./tsconfig.json",
+    "lint:fix": "tslint --fix --project ./tsconfig.json",
+    "prepublishOnly": "tnpm run build",
+    "test": "BABEL_ENV=test mocha tests/* --no-deprecation --compilers js:babel-register",
+    "cov": "BABEL_ENV=test babel-node ../../node_modules/istanbul/lib/cli.js cover _mocha tests/* -- --no-deprecation --compilers js:babel-register",
+    "cov:report": "tnpm run cov && cat ./coverage/lcov.info | ../../node_modules/coveralls/bin/coveralls.js"
+  },
+  "dependencies": {
+    "immer": "^6.0.3",
+    "tslib": "^1.11.1"
+  }
+}

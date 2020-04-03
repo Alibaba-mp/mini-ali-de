@@ -5,14 +5,10 @@ import { connectProps2MapProps } from './utils';
 
 declare function Component(options: TComponentOption<any, any, any, any, any, any, any, any>): void;
 
-interface IComponentMethods {
-  [name: string]: (...args: any[]) => void;
-}
-
 export function component<
   Props,
   Data,
-  Method extends IComponentMethods,
+  Method extends Record<string, (...args: any[]) => void>,
   S extends Store<any, any, any, any>,
   SS extends S['state'],
   SG extends S['getters'],
