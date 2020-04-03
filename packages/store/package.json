@@ -27,8 +27,8 @@
   },
   "dependencies": {
     "@de2/helpers": "0.1.0-beta.1",
-    "@de2/shared": "0.0.3",
+    "@de2/shared": "0.1.0-beta.1",
     "immer": "^1.12.1"
   },
-  "gitHead": "9e3762abde3759b495f721afa2c0a795146c0d95"
+  "gitHead": "baeba9ec0f59aa4e66558ebc5209ca37db759546"
 }
