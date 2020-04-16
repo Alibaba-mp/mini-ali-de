@@ -1,11 +1,11 @@
 # CLI
 
-De 提供了一个支付宝小程序的 CLI，提供灵活的上层构建插件能力，打通云端小程序构建，提供 init、dev、build 等能力支持。
+`@de2/cli` 是一个全局安装的 `npm` 包，提供了终端里的命令行功能，可以通过 `de init` 快速创建一个基于 [mini-ali-de](https://github.com/Alibaba-mp/mini-ali-de) 框架的小程序脚手架。
 
 ## 安装
 
 ```sh
-tnpm install -g @ali/de-cli
+tnpm install -g @de2/cli
 ```
 
 终端运行`de --help`验证是否安装成功。
