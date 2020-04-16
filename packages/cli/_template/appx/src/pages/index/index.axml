@@ -1,0 +1,4 @@
+<view class="container">
+  <view class="message">{{ message }}</view>
+  <button class="btn" loading="{{ loading }}" disabled="{{ loading }}" onTap="handleOk">{{ loading ? '' : '确定' }}</button>
+</view>

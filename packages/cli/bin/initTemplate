@@ -1,0 +1,14 @@
+#!/usr/bin/env node
+
+const fs = require('fs-extra');
+const path = require('path');
+const { execSync } = require("child_process");
+
+const tmpPath = path.resolve(__dirname, '../template')
+process.chdir(path.dirname(tmpPath));
+fs.removeSync(tmpPath);
+try {
+  execSync(`cd ${path.dirname(tmpPath)} &&  git clone https://github.com/Alibaba-mp/de-template.git template`);
+} catch (e) {
+  fs.copySync('./_template', './template');
+}

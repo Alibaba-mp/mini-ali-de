@@ -1,0 +1,5 @@
+{
+  "scripts": {
+    "postinstall": "cd src && npm i"
+  }
+}
