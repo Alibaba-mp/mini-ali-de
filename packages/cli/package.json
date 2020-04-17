@@ -1,0 +1,47 @@
+{
+  "name": "@de2/cli",
+  "version": "0.1.39",
+  "main": "lib/index.js",
+  "files": [
+    "bin",
+    "lib",
+    "template"
+  ],
+  "bin": {
+    "de2": "./bin/de",
+    "initTmp": "./bin/initTemplate"
+  },
+  "scripts": {
+    "dev": "../../node_modules/.bin/tsc -p ./tsconfig.json --watch -d",
+    "build": "../../node_modules/.bin/tsc -p ./tsconfig.json -d",
+    "lint": "../../node_modules/.bin/tslint --project ./tsconfig.json",
+    "lint:fix": "../../node_modules/.bin/tslint --fix --project ./tsconfig.json",
+    "prepublish": "npm run build",
+    "postinstall": "./bin/initTemplate"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@de2/build": "0.1.39",
+    "@de2/cli-shared": "0.1.39",
+    "@de2/loaders": "0.1.39",
+    "inquirer": "^6.2.0",
+    "@types/inquirer": "^0.0.43",
+    "copy-webpack-plugin": "^5.0.4",
+    "fs-extra": "^9.0.0",
+    "glob": "^7.1.4",
+    "mkdirp": "^0.5.1",
+    "tslib": "^1.10.0",
+    "webpack-merge": "^4.2.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@types/copy-webpack-plugin": "^5.0.0",
+    "@types/fs-extra": "^8.0.0",
+    "@types/glob": "^7.1.1",
+    "@types/mkdirp": "^0.5.2",
+    "@types/webpack-merge": "^4.1.5"
+  },
+  "gitHead": "d776e571a97dcceb077d188ed2d979fae33c1a05"
+}

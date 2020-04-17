@@ -1,0 +1,6 @@
+src
+lerna-debug.log
+npm-debug.log
+tsconfig.json
+__test__
+.DS_Store
