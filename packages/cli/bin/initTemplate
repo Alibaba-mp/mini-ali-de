@@ -9,6 +9,7 @@ process.chdir(path.dirname(tmpPath));
 fs.removeSync(tmpPath);
 try {
   execSync(`cd ${path.dirname(tmpPath)} &&  git clone https://github.com/Alibaba-mp/de-template.git template`);
+  fs.removeSync('./template/.git');
 } catch (e) {
   fs.copySync('./_template', './template');
 }
