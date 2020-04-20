@@ -27,7 +27,7 @@
     "inquirer": "^6.2.0",
     "@types/inquirer": "^0.0.43",
     "copy-webpack-plugin": "^5.0.4",
-    "fs-extra": "^9.0.0",
+    "fs-extra": "^8.1.0",
     "glob": "^7.1.4",
     "mkdirp": "^0.5.1",
     "tslib": "^1.10.0",
