@@ -1,6 +1,6 @@
 {
   "name": "@de2/cli",
-  "version": "0.1.39",
+  "version": "0.1.0-beta.7",
   "main": "lib/index.js",
   "files": [
     "bin",
@@ -21,14 +21,14 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@de2/build": "0.1.39",
-    "@de2/cli-shared": "0.1.39",
-    "@de2/loaders": "0.1.39",
-    "inquirer": "^6.2.0",
+    "@de2/build": "0.1.0-beta.7",
+    "@de2/cli-shared": "0.1.0-beta.7",
+    "@de2/loaders": "0.1.0-beta.7",
     "@types/inquirer": "^0.0.43",
     "copy-webpack-plugin": "^5.0.4",
     "fs-extra": "^8.1.0",
     "glob": "^7.1.4",
+    "inquirer": "^6.2.0",
     "mkdirp": "^0.5.1",
     "tslib": "^1.10.0",
     "webpack-merge": "^4.2.1"
