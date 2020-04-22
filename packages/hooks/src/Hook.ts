@@ -56,8 +56,11 @@ export default class Hook {
       }
       this.isScheduled = false;
       const value = this.run();
+      if (!value) {
+        continue;
+      }
       this.subscribes.forEach(subs => {
-        if (isFunction(subs) && value) {
+        if (isFunction(subs)) {
           subs.bind(this.context)(value);
         }
       });
