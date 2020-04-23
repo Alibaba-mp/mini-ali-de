@@ -1,0 +1,11 @@
+.DS_Store
+node_modules
+lib
+.idea
+*.log
+esm
+dist/
+.vscode/
+*.diff
+coverage
+template
