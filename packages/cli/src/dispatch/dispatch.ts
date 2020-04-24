@@ -10,6 +10,7 @@ export async function runDispatch(argv: string[]): Promise<void> {
     argv.push('-h');
   }
   if (argv[2].toLowerCase() === '-v') {
+    // 查看版本
     return console.log(require('../../package').version);
   }
   executor.runWithArgv(argv);
