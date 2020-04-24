@@ -1,6 +1,6 @@
 {
   "name": "@de2/cli",
-  "version": "0.1.0-beta.7",
+  "version": "0.1.0-beta.8",
   "main": "lib/index.js",
   "files": [
     "bin",
