@@ -29,3 +29,5 @@ export { useMethods } from './hooks/useMethods';
 export { useReducer } from './hooks/useReducer';
 export { useRef } from './hooks/useRef';
 export { useState } from './hooks/useState';
+
+export { IAction, IMutableRefObject, TAction, TDispatch } from './interface';
