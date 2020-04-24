@@ -1,3 +1,4 @@
+// @de2/build
 import webpack from 'webpack';
 export { webpack };
 export * from './loaders';
