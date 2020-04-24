@@ -35,10 +35,10 @@ export default class AppxDevController extends ISharedCLIController<ICommandAppx
     await invokeDeBuildProdPipe({
       env: 'dev',
       input: absInput,
-      less: config.less || true,
+      less: config.less !== false,
       output: absOutput,
       plugins: config.plugins,
-      ts: config.typescript || true,
+      ts: config.typescript !== false,
     });
   }
 }
