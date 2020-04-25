@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "init": "rimraf node_modules && npm i && lerna clean --yes && lerna bootstrap",
+    "init": "npm i && lerna clean --yes && lerna bootstrap",
     "prepublishOnly": "npm run lint && npm run cov",
     "publish": "lerna publish --no-verify-access",
     "dev": "lerna run dev --parallel",
