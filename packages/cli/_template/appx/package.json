@@ -1,5 +1,16 @@
 {
   "scripts": {
+    "dev": "rimraf -fr ./dist && de2 appx-dev --input ./src --output ./dist",
+    "build": "rimraf -fr ./dist && de2 appx-build --input ./src --output ./dist",
     "postinstall": "cd src && npm i"
+  },
+  "dependencies": {
+    "mini-ali-de": "0.1.0-beta.4"
+  },
+  "devDependencies": {
+    "mini-types": "^0.1.1",
+    "@de2/cli": "^0.1.39",
+    "typescript": "^3.6.4",
+    "rimraf": "^3.0.2"
   }
 }
