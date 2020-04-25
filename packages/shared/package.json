@@ -1,6 +1,6 @@
 {
   "name": "@de2/shared",
-  "version": "0.1.0",
+  "version": "0.1.43",
   "description": "shared for de",
   "main": "lib/index.js",
   "module": "esm/index.js",

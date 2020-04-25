@@ -1,6 +1,6 @@
 {
   "name": "@de2/helpers",
-  "version": "0.1.0",
+  "version": "0.1.43",
   "description": "helpers for de",
   "main": "lib/index.js",
   "module": "esm/index.js",
@@ -26,7 +26,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@de2/shared": "0.1.0"
+    "@de2/shared": "0.1.43"
   },
   "gitHead": "77c98bd0a6469fa9be230afd25f0f05c0b253b5f"
 }
