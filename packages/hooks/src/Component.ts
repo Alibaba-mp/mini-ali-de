@@ -4,7 +4,7 @@ import { compose, each, isFunction } from './utils';
 declare function Component(options: any): void;
 declare const my: any;
 
-export function useHooksComponent<S>(create: () => Record<string, any>, initialState?: (() => S) | S): void {
+export function useHooksComponent<S>(create: () => Record<string, any>, initialState?: (() => S) | S, initialProps?: Record<string, any>): void {
   const component2 = my.canIUse('component2');
   let component = new HookComponent(create, valueChange);
   let ctx: any = null;
@@ -47,6 +47,7 @@ export function useHooksComponent<S>(create: () => Record<string, any>, initialS
 
   Component({
     data: initialState,
+    props: initialProps,
     ...(component2
       ? { onInit: createMountLifeCycle('onInit'), deriveDataFromProps: createLifeCycle('deriveDataFromProps') }
       : { didMount: createMountLifeCycle('didMount') }),

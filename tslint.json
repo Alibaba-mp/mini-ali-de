@@ -15,7 +15,8 @@
     "no-empty": false,
     "no-console": false,
     "no-namespace": false,
-    "no-shadowed-variable": false
+    "no-shadowed-variable": false,
+    "object-literal-sort-keys": false
   },
   "rulesDirectory": []
 }

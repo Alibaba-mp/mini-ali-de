@@ -38,12 +38,12 @@ export function useHooksPage<S>(create: () => Record<string, any>, initialState?
   Page({
     data: initialState,
     onShow: createLifeCycle('onShow'),
-    useHide: createLifeCycle('onHide'),
-    usePullDownRefresh: createLifeCycle('onPullDownRefresh'),
-    useReachBottom: createLifeCycle('onReachBottom'),
-    useReady: createLifeCycle('onReady'),
-    useShareAppMessage: createLifeCycle('onShareAppMessage'),
-    useTitleClick: createLifeCycle('onTitleClick'),
+    onHide: createLifeCycle('onHide'),
+    onPullDownRefresh: createLifeCycle('onPullDownRefresh'),
+    onReachBottom: createLifeCycle('onReachBottom'),
+    onReady: createLifeCycle('onReady'),
+    onShareAppMessage: createLifeCycle('onShareAppMessage'),
+    onTitleClick: createLifeCycle('onTitleClick'),
     onLoad() {
       ctx = this;
       if (component) {
