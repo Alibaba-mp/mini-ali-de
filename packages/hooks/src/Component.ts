@@ -1,12 +1,18 @@
 import HookComponent from './Hook';
+import { IHooksComponentOptions } from './interface';
 import { compose, each, isFunction } from './utils';
 
 declare function Component(options: any): void;
 declare const my: any;
 
-export function useHooksComponent<S>(create: () => Record<string, any>, initialState?: (() => S) | S, initialProps?: Record<string, any>): void {
+export function useHooksComponent(options: IHooksComponentOptions<Record<string, any>> | (() => Record<string, any>)): void {
+  if (typeof options === 'function') {
+    options = { setup: options };
+  }
+
+  const { data = {}, props = {} } = options;
   const component2 = my.canIUse('component2');
-  let component = new HookComponent(create, valueChange);
+  let component = new HookComponent(options, valueChange);
   let ctx: any = null;
 
   function valueChange(newHookValue: any) {
@@ -46,8 +52,8 @@ export function useHooksComponent<S>(create: () => Record<string, any>, initialS
   }
 
   Component({
-    data: initialState,
-    props: initialProps,
+    data,
+    props,
     ...(component2
       ? { onInit: createMountLifeCycle('onInit'), deriveDataFromProps: createLifeCycle('deriveDataFromProps') }
       : { didMount: createMountLifeCycle('didMount') }),

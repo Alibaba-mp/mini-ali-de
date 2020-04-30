@@ -1,7 +1,10 @@
+import { IHooksComponentOptions, IHooksPageOptions } from './interface';
 import master from './master';
 import { ensureArray, isFunction, isObject } from './utils';
 
+type THooksOptions = IHooksComponentOptions<any> | IHooksPageOptions<any>;
 export default class Hook {
+  public options: THooksOptions;
   public fn: () => Record<string, any>;
   public context: any;
   public hooksId: number;
@@ -11,8 +14,9 @@ export default class Hook {
   public isScheduled: boolean;
   public renderCount: number;
   public isUpdating: boolean;
-  constructor(create: () => Record<string, any>, subscribes: (newValue: any) => void) {
-    this.fn = create;
+  constructor(options: THooksOptions, subscribes: (newValue: any) => void) {
+    this.options = options;
+    this.fn = options.setup.bind(this);
 
     this.context = null;
     this.hooksId = 0;
@@ -42,7 +46,7 @@ export default class Hook {
 
   public run() {
     this.hooksId = 0;
-    return this.fn.call(this);
+    return this.fn.call(this, this.context);
   }
 
   public update() {

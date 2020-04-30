@@ -1,11 +1,17 @@
 import HookComponent from './Hook';
+import { IHooksPageOptions } from './interface';
 import { compose, each, isFunction } from './utils';
 
 declare function Page(options: any): void;
 declare const my: any;
 
-export function useHooksPage<S>(create: () => Record<string, any>, initialState?: (() => S) | S): void {
-  let component = new HookComponent(create, valueChange);
+export function useHooksPage(options: IHooksPageOptions<Record<string, any>> | (() => Record<string, any>)): void {
+  if (typeof options === 'function') {
+    options = { setup: options };
+  }
+
+  const { data = {} } = options;
+  let component = new HookComponent(options, valueChange);
   let ctx: any = null;
 
   function valueChange(newHookValue: any) {
@@ -36,7 +42,7 @@ export function useHooksPage<S>(create: () => Record<string, any>, initialState?
   }
 
   Page({
-    data: initialState,
+    data,
     onShow: createLifeCycle('onShow'),
     onHide: createLifeCycle('onHide'),
     onPullDownRefresh: createLifeCycle('onPullDownRefresh'),
